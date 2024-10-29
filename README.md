@@ -11,5 +11,22 @@ This project scrapes the top 100 best-selling games from the Steam store using S
 - [Credits](#credits)
 - [Acknowledgments](#acknowledgments)
 
+## How to Install and Run the Project
+
+To get started with this project locally, follow these steps to set up the environment and run the scraper and web application.
+
+### Prerequisites
+
+- Python 3.8+
+- Scrapy
+- Flask
+
+### Setup
+
+1. **Clone the Repository**  
+   Clone this repository to your local machine using:
+   ```bash
+   git clone https://github.com/your-username/your-repository.git
+
 
 
