@@ -14,7 +14,7 @@ This project scrapes the top 100 best-selling games from the Steam store using S
 
 ### Prerequisites
 
-- Python 3.8+
+- Python 
 - Scrapy
 - Flask
 
