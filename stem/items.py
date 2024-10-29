@@ -20,19 +20,25 @@ def remove_html( rate):
             clean_rate = 'NO review'
         return clean_rate
 
-def get_platform( one_class):
-        plateformm = []
-        
-        platform = one_class.split(" ")[-1]
-        if platform == "win":
-                plateformm.append("Windows")
-        if platform == "mac":
-                plateformm.append("Mac OS")
-        if platform == "linux":
-                plateformm.append("Linux")
-        else:
-                plateformm.append(platform)
-        return plateformm
+
+    
+def get_platforms(one_class):
+    platforms = []
+
+
+    platform = one_class.split(' ')[-1]
+    if platform == 'win':
+        platforms.append('Windows')
+    if platform == 'mac':
+        platforms.append('Mac os')
+    if platform == 'linux':
+        platforms.append('Linux')
+    if platform == 'vr_supported':
+        platforms.append('VR Supported')
+
+
+    return platforms
+
 
 class StemItem(scrapy.Item):
     # define the fields for your item here like:
@@ -50,7 +56,7 @@ class StemItem(scrapy.Item):
         output_processor=TakeFirst()
      )
      platform = scrapy.Field(
-         input_processor=MapCompose(get_platform),
+         input_processor=MapCompose(get_platforms),
      )
      rate = scrapy.Field(
          input_processor=MapCompose(remove_html),
