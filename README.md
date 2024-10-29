@@ -80,7 +80,6 @@ You can adjust the scraping settings in `settings.py`, such as download delay, c
 - **[Ahmed Hesham]** - [GitHub](https://github.com/Ahmed-hesham11) | [LinkedIn](https://www.linkedin.com/in/ahmed-hesham-76a29a285/)
 
 
-If you followed any tutorials or referenced materials to build this project, please link to them here as well.
 
 ## Acknowledgments
 
