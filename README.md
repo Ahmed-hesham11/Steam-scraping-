@@ -7,7 +7,7 @@ This project scrapes the top 100 best-selling games from the Steam store using S
 
 ## Table of Contents
 
-- [How to Install and Run the Project](#installation)
+- [How to Install and Run the Project](#How-to-Install-and-Run-the-Project)
 - [Project Structure](#project-structure)
 - [Usage](#usage)
 - [Configuration](#configuration)
@@ -20,7 +20,7 @@ To get started with this project locally, follow these steps to set up the envir
 
 ### Prerequisites
 
-- Python 3.8+
+- Python +
 - Scrapy
 - Flask
 
