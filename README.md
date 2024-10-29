@@ -4,16 +4,12 @@ This project scrapes the top 100 best-selling games from the Steam store using S
 
 ## Table of Contents
 
-- [Steam Top 100 Sellers Scraper](#steam-top-100-sellers-scraper)
-  - [Table of Contents](#table-of-contents)
-  - [Installation](#installation)
-    - [Prerequisites](#prerequisites)
-    - [Setup](#setup)
-  - [Project Structure](#project-structure)
-  - [Usage](#usage)
-  - [Configuration](#configuration)
-  - [Credits](#credits)
-  - [Acknowledgments](#acknowledgments)
+- [How to Install and Run the Project](#installation)
+- [Project Structure](#project-structure)
+- [Usage](#usage)
+- [Configuration](#configuration)
+- [Credits](#credits)
+- [Acknowledgments](#acknowledgments)
 
 
 
