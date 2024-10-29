@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <title>Steam Games</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Steam Games</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <div class="container mt-4">
+        <div class="jumbotron text-center">
+            <h1 class="display-4">Steam TOP 100 Games</h1>
+            <p class="lead">All the games you see below are scraped from the Steam store using Scrapy.</p>
+            <hr class="my-4">
+            <p>Explore the top-selling games on Steam.</p>
+        </div>
+    </div>
+
+    <!-- Games Grid -->
+    <div class="container">
+        {% for game in games %}
+            {% if loop.index0 % 3 == 0 %}
+                <div class="row justify-content-center mt-4 mb-4">
+            {% endif %}
+
+            <div class="card mr-4" style="width: 18rem; text-align: center;">
+                <img src="{{game.get('img_url')}}" class="card-img-top" >
+                <div class="card-body">
+                  <h5 class="card-title">{{game.get('game_name')}}</h5>
+                  <p class="card-text">Supported platforms: {{game.get('platform')}}</p>
+                  <a href="{{game.get('url')}}" class="btn btn-primary">Game URL</a>
+                </div>
+              </div>
+
+            {% if loop.index0 %3 == 2 %}
+                </div>
+            {% endif %}
+
+        {% endfor %}
+
+    </div>
+
+    </div>
+
+</body>
+</html>
